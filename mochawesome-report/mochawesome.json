@@ -1,0 +1,163 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 2,
+    "pending": 0,
+    "failures": 1,
+    "start": "2021-04-22T10:47:10.354Z",
+    "end": "2021-04-22T10:47:23.915Z",
+    "duration": 13561,
+    "testsRegistered": 4,
+    "passPercent": 50,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 1,
+    "hasSkipped": true
+  },
+  "results": [
+    {
+      "uuid": "89babf80-f9ef-4a0d-8a62-2b70d894e141",
+      "title": "",
+      "fullFile": "cypress/integration/aleksCases/goToAllPages.js",
+      "file": "cypress/integration/aleksCases/goToAllPages.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "df5f0daa-3595-49c2-8c4f-b414d0781249",
+          "title": "Go to all pages",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Go to Rooms",
+              "fullTitle": "Go to all pages Go to Rooms",
+              "timedOut": null,
+              "duration": 4121,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "homeStartPage.viewRooms(\"Rooms\");",
+              "err": {},
+              "uuid": "716d1415-3338-4b6e-87b3-b6e74f5b4e62",
+              "parentUUID": "df5f0daa-3595-49c2-8c4f-b414d0781249",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Go to Clients",
+              "fullTitle": "Go to all pages Go to Clients",
+              "timedOut": null,
+              "duration": 3752,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "homeStartPage.viewClients(\"Clients\");",
+              "err": {},
+              "uuid": "fd4c8cf7-a167-4bce-bd9d-4cb92cf53c6e",
+              "parentUUID": "df5f0daa-3595-49c2-8c4f-b414d0781249",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Go to Bills",
+              "fullTitle": "Go to all pages Go to Bills",
+              "timedOut": null,
+              "duration": 5409,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "homeStartPage.viewBills(\"Bills\");",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: expected '<h2>' to contain 'Login'\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Go to all pages`",
+                "estack": "AssertionError: Timed out retrying after 4000ms: expected '<h2>' to contain 'Login'\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Go to all pages`\n    at Object.checkLoginPageTitle (http://localhost:3000/__cypress/tests?p=cypress/integration/aleksCases/goToAllPages.js:353:18)\n    at Context.eval (http://localhost:3000/__cypress/tests?p=cypress/integration/aleksCases/goToAllPages.js:208:15)",
+                "diff": null
+              },
+              "uuid": "dcb15631-ab90-424c-adb6-d107098e786e",
+              "parentUUID": "df5f0daa-3595-49c2-8c4f-b414d0781249",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Go to Resurvations",
+              "fullTitle": "Go to all pages Go to Resurvations",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "homeStartPage.viewResurvations(\"Reservations\");",
+              "err": {},
+              "uuid": "93d7f407-0d7f-496f-af56-44c18d380286",
+              "parentUUID": "df5f0daa-3595-49c2-8c4f-b414d0781249",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "716d1415-3338-4b6e-87b3-b6e74f5b4e62",
+            "fd4c8cf7-a167-4bce-bd9d-4cb92cf53c6e"
+          ],
+          "failures": [
+            "dcb15631-ab90-424c-adb6-d107098e786e"
+          ],
+          "pending": [],
+          "skipped": [
+            "93d7f407-0d7f-496f-af56-44c18d380286"
+          ],
+          "duration": 13282,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": null,
+      "version": "5.2.0"
+    }
+  }
+}

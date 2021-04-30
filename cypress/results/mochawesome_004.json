@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-04-29T08:01:31.429Z",
+    "end": "2021-04-29T08:01:41.112Z",
+    "duration": 9683,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "e7268cd2-bc5b-46e5-b676-70630943ab8e",
+      "title": "",
+      "fullFile": "cypress/integration/aleksCases/goToRoomsCreat.js",
+      "file": "cypress/integration/aleksCases/goToRoomsCreat.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "17ab670e-60ef-4a7f-ae1e-55877c019e18",
+          "title": "Go to rooms Creat",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Rooms Creat Save",
+              "fullTitle": "Go to rooms Creat Rooms Creat Save",
+              "timedOut": null,
+              "duration": 9594,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "homeStartPage.viewRooms(\"Rooms\");\nroomsPage.roomCreatBtn(\"Room\");\nroomCreatPage.fillInForm('twin', randomNumber, randomFloor, randomPrice, ['balcony', 'ensuite', 'sea_view']); // 'balcony', 'ensuite', 'sea_view', 'penthouse'\nroomCreatPage.roomSave(\"Rooms\");\nroomsPage.verifyLastRoom('twin', randomNumber, randomFloor, randomPrice, ['balcony', 'ensuite', 'sea_view']); // 'balcony', 'ensuite', 'sea_view', 'penthouse'\nroomsPage.roomsBackBtn(\"Tester Hotel Overview\");",
+              "err": {},
+              "uuid": "a0f7baf9-e4fb-43e3-949f-4b6eebb68c68",
+              "parentUUID": "17ab670e-60ef-4a7f-ae1e-55877c019e18",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "a0f7baf9-e4fb-43e3-949f-4b6eebb68c68"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 9594,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": "false",
+        "html": "false",
+        "json": "true"
+      },
+      "version": "5.2.0"
+    }
+  }
+}

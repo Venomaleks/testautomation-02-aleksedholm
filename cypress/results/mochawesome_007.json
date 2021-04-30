@@ -1,0 +1,132 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 0,
+    "pending": 0,
+    "failures": 2,
+    "start": "2021-04-29T08:03:20.078Z",
+    "end": "2021-04-29T08:03:43.270Z",
+    "duration": 23192,
+    "testsRegistered": 2,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "9c2bc020-da53-4f9f-9d7c-329a55005ddf",
+      "title": "",
+      "fullFile": "cypress/integration/aleksCases/tooDelete.js",
+      "file": "cypress/integration/aleksCases/tooDelete.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "a005512d-504c-47fd-b96f-2acae5866ef7",
+          "title": "Too Delete in Rooms",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Delete in Rooms Page",
+              "fullTitle": "Too Delete in Rooms Delete in Rooms Page",
+              "timedOut": null,
+              "duration": 10952,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "homeStartPage.viewRooms(\"Rooms\");\nroomsPage.roomCreatBtn(\"Room\");\nroomCreatPage.fillInForm('twin', \"7\", \"13\", \"4886\", 'balcony');\nroomCreatPage.roomSave(\"Rooms\");\nroomsPage.verifyLastRoom('twin', \"7\", \"13\", \"4886\", \"true\", 'balcony');\nroomsPage.roomsMenuDel();\nroomsPage.roomsBackBtn(\"Tester Hotel Overview\");",
+              "err": {
+                "message": "CypressError: Timed out retrying after 4000ms: `cy.select()` failed because it could not find a single `<option>` with value or text matching: `b, a, l, c`\n\nhttps://on.cypress.io/select",
+                "estack": "CypressError: Timed out retrying after 4000ms: `cy.select()` failed because it could not find a single `<option>` with value or text matching: `b, a, l, c`\n\nhttps://on.cypress.io/select\n    at getOptions (http://localhost:3000/__cypress/runner/cypress_runner.js:133466:21)\n    at tryCatcher (http://localhost:3000/__cypress/runner/cypress_runner.js:10747:23)\n    at Function.Promise.attempt.Promise.try (http://localhost:3000/__cypress/runner/cypress_runner.js:8021:29)\n    at retryOptions (http://localhost:3000/__cypress/runner/cypress_runner.js:133504:27)\n    at tryCatcher (http://localhost:3000/__cypress/runner/cypress_runner.js:10747:23)\n    at Function.Promise.attempt.Promise.try (http://localhost:3000/__cypress/runner/cypress_runner.js:8021:29)\n    at tryFn (http://localhost:3000/__cypress/runner/cypress_runner.js:146270:21)\n    at whenStable (http://localhost:3000/__cypress/runner/cypress_runner.js:146308:12)\n    at http://localhost:3000/__cypress/runner/cypress_runner.js:145803:16\n    at tryCatcher (http://localhost:3000/__cypress/runner/cypress_runner.js:10747:23)\n    at Promise._settlePromiseFromHandler (http://localhost:3000/__cypress/runner/cypress_runner.js:8682:31)\n    at Promise._settlePromise (http://localhost:3000/__cypress/runner/cypress_runner.js:8739:18)\n    at Promise._settlePromise0 (http://localhost:3000/__cypress/runner/cypress_runner.js:8784:10)\n    at Promise._settlePromises (http://localhost:3000/__cypress/runner/cypress_runner.js:8864:18)\n    at Promise._fulfill (http://localhost:3000/__cypress/runner/cypress_runner.js:8808:18)\n    at http://localhost:3000/__cypress/runner/cypress_runner.js:10422:46\nFrom Your Spec Code:\n    at featureSelector (http://localhost:3000/__cypress/tests?p=cypress/integration/aleksCases/tooDelete.js:358:32)\n    at Object.fillInForm (http://localhost:3000/__cypress/tests?p=cypress/integration/aleksCases/tooDelete.js:384:3)\n    at Context.eval (http://localhost:3000/__cypress/tests?p=cypress/integration/aleksCases/tooDelete.js:219:19)",
+                "diff": null
+              },
+              "uuid": "d4b37209-1e04-4ea6-a8ae-d8ada460c58f",
+              "parentUUID": "a005512d-504c-47fd-b96f-2acae5866ef7",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Delete in Room Edit Page",
+              "fullTitle": "Too Delete in Rooms Delete in Room Edit Page",
+              "timedOut": null,
+              "duration": 11165,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "homeStartPage.viewRooms(\"Rooms\");\nroomsPage.roomCreatBtn(\"Room\");\nroomCreatPage.fillInForm('twin', \"7\", \"13\", \"4886\", 'balcony');\nroomCreatPage.roomSave(\"Rooms\");\nroomsPage.verifyLastRoom('twin', \"7\", \"13\", \"4886\", \"true\", 'balcony');\nroomsPage.roomsMenuEdt();\nroomEditPage.deleteEdit();\nroomsPage.roomsBackBtn(\"Tester Hotel Overview\");",
+              "err": {
+                "message": "CypressError: Timed out retrying after 4000ms: `cy.select()` failed because it could not find a single `<option>` with value or text matching: `b, a, l, c`\n\nhttps://on.cypress.io/select",
+                "estack": "CypressError: Timed out retrying after 4000ms: `cy.select()` failed because it could not find a single `<option>` with value or text matching: `b, a, l, c`\n\nhttps://on.cypress.io/select\n    at getOptions (http://localhost:3000/__cypress/runner/cypress_runner.js:133466:21)\n    at tryCatcher (http://localhost:3000/__cypress/runner/cypress_runner.js:10747:23)\n    at Function.Promise.attempt.Promise.try (http://localhost:3000/__cypress/runner/cypress_runner.js:8021:29)\n    at retryOptions (http://localhost:3000/__cypress/runner/cypress_runner.js:133504:27)\n    at tryCatcher (http://localhost:3000/__cypress/runner/cypress_runner.js:10747:23)\n    at Function.Promise.attempt.Promise.try (http://localhost:3000/__cypress/runner/cypress_runner.js:8021:29)\n    at tryFn (http://localhost:3000/__cypress/runner/cypress_runner.js:146270:21)\n    at whenStable (http://localhost:3000/__cypress/runner/cypress_runner.js:146308:12)\n    at http://localhost:3000/__cypress/runner/cypress_runner.js:145803:16\n    at tryCatcher (http://localhost:3000/__cypress/runner/cypress_runner.js:10747:23)\n    at Promise._settlePromiseFromHandler (http://localhost:3000/__cypress/runner/cypress_runner.js:8682:31)\n    at Promise._settlePromise (http://localhost:3000/__cypress/runner/cypress_runner.js:8739:18)\n    at Promise._settlePromise0 (http://localhost:3000/__cypress/runner/cypress_runner.js:8784:10)\n    at Promise._settlePromises (http://localhost:3000/__cypress/runner/cypress_runner.js:8864:18)\n    at Promise._fulfill (http://localhost:3000/__cypress/runner/cypress_runner.js:8808:18)\n    at http://localhost:3000/__cypress/runner/cypress_runner.js:10422:46\nFrom Your Spec Code:\n    at featureSelector (http://localhost:3000/__cypress/tests?p=cypress/integration/aleksCases/tooDelete.js:358:32)\n    at Object.fillInForm (http://localhost:3000/__cypress/tests?p=cypress/integration/aleksCases/tooDelete.js:384:3)\n    at Context.eval (http://localhost:3000/__cypress/tests?p=cypress/integration/aleksCases/tooDelete.js:228:19)",
+                "diff": null
+              },
+              "uuid": "a133c9fd-984f-4c7e-9d66-9fa43e7c8510",
+              "parentUUID": "a005512d-504c-47fd-b96f-2acae5866ef7",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "d4b37209-1e04-4ea6-a8ae-d8ada460c58f",
+            "a133c9fd-984f-4c7e-9d66-9fa43e7c8510"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 22117,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": "false",
+        "html": "false",
+        "json": "true"
+      },
+      "version": "5.2.0"
+    }
+  }
+}

@@ -1,0 +1,162 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-04-29T08:02:08.859Z",
+    "end": "2021-04-29T08:02:41.797Z",
+    "duration": 32938,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "43365d76-2e2c-4e15-8469-5343b1b1a7cc",
+      "title": "",
+      "fullFile": "cypress/integration/aleksCases/homeButton.js",
+      "file": "cypress/integration/aleksCases/homeButton.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "7773f83b-85fa-4387-aff0-7eb15f7c9db4",
+          "title": "Home Button in the pages",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Go to Rooms",
+              "fullTitle": "Home Button in the pages Go to Rooms",
+              "timedOut": null,
+              "duration": 8967,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "homeStartPage.viewRooms(\"Rooms\");\nroomPage.goHomePageRoom(\"Tester Hotel Overview\");\nhomeStartPage.viewRooms(\"Rooms\");\ncy.wait(500);\nroomPage.roomCreatBtn(\"New Room\");\ncreatRoom.goHomePageRoom(\"Tester Hotel Overview\");\nhomeStartPage.viewRooms(\"Rooms\");\ncy.wait(500);\nroomPage.roomsMenuEdt(\"Room\");\neditRoom.goHomePageRoom(\"Tester Hotel Overview\");",
+              "err": {},
+              "uuid": "b1e9b0c2-5a73-426c-acd6-ac70d3464106",
+              "parentUUID": "7773f83b-85fa-4387-aff0-7eb15f7c9db4",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Go to Clients",
+              "fullTitle": "Home Button in the pages Go to Clients",
+              "timedOut": null,
+              "duration": 7498,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "homeStartPage.viewClients(\"Clients\");\nclientPage.goHomePageClient(\"Tester Hotel Overview\");\nhomeStartPage.viewClients(\"Clients\");\ncy.wait(500);\nclientPage.clientCreatBtn(\"New Client\");\ncreatClient.goHomePageClient(\"Tester Hotel Overview\");\nhomeStartPage.viewClients(\"Clients\");\ncy.wait(500);\nclientPage.clientsMenuEdt(\"Client\");\neditClient.goHomePageClient(\"Tester Hotel Overview\");",
+              "err": {},
+              "uuid": "74459fb7-6056-4258-abc7-e49cb8f2bba6",
+              "parentUUID": "7773f83b-85fa-4387-aff0-7eb15f7c9db4",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Go to Bills",
+              "fullTitle": "Home Button in the pages Go to Bills",
+              "timedOut": null,
+              "duration": 6957,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "homeStartPage.viewBills(\"Bills\");\nbillPage.goHomePageBill(\"Tester Hotel Overview\");\nhomeStartPage.viewBills(\"Bills\");\ncy.wait(500);\nbillPage.billCreatBtn(\"New Bill\");\ncreatBill.goHomePageBill(\"Tester Hotel Overview\");\nhomeStartPage.viewBills(\"Bills\");\ncy.wait(500);\nbillPage.billsMenuEdt(\"Bill\");\neditBill.goHomePageBill(\"Tester Hotel Overview\");",
+              "err": {},
+              "uuid": "2c39650f-9fac-4eb7-afcd-e221c3648402",
+              "parentUUID": "7773f83b-85fa-4387-aff0-7eb15f7c9db4",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Go to Resurvations",
+              "fullTitle": "Home Button in the pages Go to Resurvations",
+              "timedOut": null,
+              "duration": 7578,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "homeStartPage.viewResurvations(\"Reservations\");\nreservPage.goHomePageReserv(\"Tester Hotel Overview\");\nhomeStartPage.viewResurvations(\"Reservations\");\ncy.wait(500);\nreservPage.reservCreatBtn(\"New Reservation\");\ncreatReserv.goHomePageReserv(\"Tester Hotel Overview\");\nhomeStartPage.viewResurvations(\"Reservations\");\ncy.wait(500);\nreservPage.reservsMenuEdt(\"Reservation\");\neditReserv.goHomePageReserv(\"Tester Hotel Overview\");",
+              "err": {},
+              "uuid": "9cef03bb-027c-4fbe-a12a-63606e524e4f",
+              "parentUUID": "7773f83b-85fa-4387-aff0-7eb15f7c9db4",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "b1e9b0c2-5a73-426c-acd6-ac70d3464106",
+            "74459fb7-6056-4258-abc7-e49cb8f2bba6",
+            "2c39650f-9fac-4eb7-afcd-e221c3648402",
+            "9cef03bb-027c-4fbe-a12a-63606e524e4f"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 31000,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": "false",
+        "html": "false",
+        "json": "true"
+      },
+      "version": "5.2.0"
+    }
+  }
+}

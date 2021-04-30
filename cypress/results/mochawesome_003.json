@@ -1,0 +1,124 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-04-29T08:00:24.797Z",
+    "end": "2021-04-29T08:00:45.669Z",
+    "duration": 20872,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "ed49ee4f-7bf6-4b13-951b-3d89470b5f8c",
+      "title": "",
+      "fullFile": "cypress/integration/aleksCases/goToEditRoom.js",
+      "file": "cypress/integration/aleksCases/goToEditRoom.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "bf80fc63-5e75-4686-aea3-b32853e24f11",
+          "title": "Go to Rooms Edit",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Room Edit Save",
+              "fullTitle": "Go to Rooms Edit Room Edit Save",
+              "timedOut": null,
+              "duration": 10815,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "homeStartPage.viewRooms(\"Rooms\");\nroomsPage.roomsMenuEdt(\"Room\");\nroomEditPage.fillInEdit('twin', randomNumber, randomFloor, randomPrice, [\"balcony\"]);\nroomEditPage.editSave(\"Rooms\");\nroomsPage.verifyLastRoom('twin', randomNumber, randomFloor, randomPrice, [\"balcony\"]);\nroomsPage.roomsBackBtn(\"Tester Hotel Overview\");",
+              "err": {},
+              "uuid": "c545c443-54b5-4198-9dcb-eeb87d7bc50d",
+              "parentUUID": "bf80fc63-5e75-4686-aea3-b32853e24f11",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Room Edit Back",
+              "fullTitle": "Go to Rooms Edit Room Edit Back",
+              "timedOut": null,
+              "duration": 8758,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "homeStartPage.viewRooms(\"Rooms\");\nroomsPage.roomsMenuEdt(\"Room\");\nroomEditPage.fillInEdit('double', randomNumber, randomFloor, randomPrice, [\"balcony\"]);\nroomEditPage.editBack(\"Rooms\");\nroomsPage.roomsBackBtn(\"Tester Hotel Overview\");",
+              "err": {},
+              "uuid": "d5049b23-4862-4d04-bb7c-eb89437c3114",
+              "parentUUID": "bf80fc63-5e75-4686-aea3-b32853e24f11",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "c545c443-54b5-4198-9dcb-eeb87d7bc50d",
+            "d5049b23-4862-4d04-bb7c-eb89437c3114"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 19573,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": "false",
+        "html": "false",
+        "json": "true"
+      },
+      "version": "5.2.0"
+    }
+  }
+}

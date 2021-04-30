@@ -1,0 +1,201 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 5,
+    "passes": 0,
+    "pending": 0,
+    "failures": 5,
+    "start": "2021-04-30T09:02:02.875Z",
+    "end": "2021-04-30T09:02:34.682Z",
+    "duration": 31807,
+    "testsRegistered": 5,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "14bc23b8-c15a-4e19-ba4f-07113030c19e",
+      "title": "",
+      "fullFile": "cypress/integration/assignment-2.spec.js",
+      "file": "cypress/integration/assignment-2.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "bd941675-a19a-48fa-ae16-15e9d4c3bc92",
+          "title": "Home Button in the pages and creat a room",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Go to Rooms",
+              "fullTitle": "Home Button in the pages and creat a room Go to Rooms",
+              "timedOut": null,
+              "duration": 6169,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "homeStartPage.viewRooms(\"Rooms\");\ncy.percySnapshot('Rooms-page');\ncy.wait(500);\nroomPage.roomCreatBtn(\"New Room\");\ncy.percySnapshot('Newroom-page');\ncreatRoom.goHomePageRoom(\"Tester Hotel Overview\");\ncy.percySnapshot('Home-page');\nhomeStartPage.viewRooms(\"Rooms\");\ncy.wait(500);\nroomPage.roomsMenuEdt(\"Room\");\ncy.percySnapshot('Editroom-page');\neditRoom.goHomePageRoom(\"Tester Hotel Overview\");",
+              "err": {
+                "message": "TypeError: cy.percySnapshot is not a function",
+                "estack": "TypeError: cy.percySnapshot is not a function\n    at Context.eval (http://localhost:3000/__cypress/tests?p=cypress/integration/assignment-2.spec.js:243:8)",
+                "diff": null
+              },
+              "uuid": "43eb97c9-9d22-4649-ba55-d9e22c35383d",
+              "parentUUID": "bd941675-a19a-48fa-ae16-15e9d4c3bc92",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Room Creat",
+              "fullTitle": "Home Button in the pages and creat a room Room Creat",
+              "timedOut": null,
+              "duration": 5313,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "homeStartPage.viewRooms(\"Rooms\");\ncy.wait(500);\nroomPage.roomCreatBtn(\"New Room\");\ncy.percySnapshot('Newroom-page');\ncreatRoom.fillInFormRoom(randomCategory, randomNumber, randomFloor, randomPrice, [randomFeatcher]);\ncy.percySnapshot('NewroomInputs-page');\ncreatRoom.roomSave(\"Rooms\");\nroomPage.verifyLastRoom(randomCategory, randomNumber, randomFloor, randomPrice, [randomFeatcher]);\ncy.percySnapshot('NewroomInList-page');\ncreatRoom.goHomePageRoom(\"Tester Hotel Overview\");",
+              "err": {
+                "message": "TypeError: cy.percySnapshot is not a function",
+                "estack": "TypeError: cy.percySnapshot is not a function\n    at Context.eval (http://localhost:3000/__cypress/tests?p=cypress/integration/assignment-2.spec.js:259:8)",
+                "diff": null
+              },
+              "uuid": "bdc16856-7a55-45fc-a036-c530ab9a49be",
+              "parentUUID": "bd941675-a19a-48fa-ae16-15e9d4c3bc92",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Go to Clients",
+              "fullTitle": "Home Button in the pages and creat a room Go to Clients",
+              "timedOut": null,
+              "duration": 5190,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "homeStartPage.viewClients(\"Clients\");\ncy.wait(500);\nclientPage.clientCreatBtn(\"New Client\");\ncy.percySnapshot('Newclient-page');\ncreatClient.goHomePageClient(\"Tester Hotel Overview\");\nhomeStartPage.viewClients(\"Clients\");\ncy.wait(500);\nclientPage.clientsMenuEdt(\"Client\");\ncy.percySnapshot('Editclient-page');\neditClient.goHomePageClient(\"Tester Hotel Overview\");",
+              "err": {
+                "message": "TypeError: cy.percySnapshot is not a function",
+                "estack": "TypeError: cy.percySnapshot is not a function\n    at Context.eval (http://localhost:3000/__cypress/tests?p=cypress/integration/assignment-2.spec.js:271:8)",
+                "diff": null
+              },
+              "uuid": "1fe8859f-51b7-4d4a-8478-4895ce367ed4",
+              "parentUUID": "bd941675-a19a-48fa-ae16-15e9d4c3bc92",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Go to Bills",
+              "fullTitle": "Home Button in the pages and creat a room Go to Bills",
+              "timedOut": null,
+              "duration": 5560,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "homeStartPage.viewBills(\"Bills\");\ncy.wait(500);\nbillPage.billCreatBtn(\"New Bill\");\ncy.percySnapshot('Creatbill-page');\ncreatBill.goHomePageBill(\"Tester Hotel Overview\");\nhomeStartPage.viewBills(\"Bills\");\ncy.wait(500);\nbillPage.billsMenuEdt(\"Bill\");\ncy.percySnapshot('Editbill-page');\neditBill.goHomePageBill(\"Tester Hotel Overview\");",
+              "err": {
+                "message": "TypeError: cy.percySnapshot is not a function",
+                "estack": "TypeError: cy.percySnapshot is not a function\n    at Context.eval (http://localhost:3000/__cypress/tests?p=cypress/integration/assignment-2.spec.js:283:8)",
+                "diff": null
+              },
+              "uuid": "a919e2b5-2508-4693-9588-7bc839c10a61",
+              "parentUUID": "bd941675-a19a-48fa-ae16-15e9d4c3bc92",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Go to Resurvations",
+              "fullTitle": "Home Button in the pages and creat a room Go to Resurvations",
+              "timedOut": null,
+              "duration": 6409,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "homeStartPage.viewResurvations(\"Reservations\");\ncy.wait(500);\nreservPage.reservCreatBtn(\"New Reservation\");\ncy.percySnapshot('New-page');\ncy.wait(1000);\ncreatReserv.goHomePageReserv(\"Tester Hotel Overview\");\ncy.percySnapshot('Homereserv-page');\ncy.wait(1000); //homeStartPage.errorBTN(\"Tester Hotel Overview\")\nhomeStartPage.viewResurvations(\"Reservations\");\ncy.wait(500);\nreservPage.reservsMenuEdt(\"Reservation\");\ncy.percySnapshot('Editreserv-page');\neditReserv.goHomePageReserv(\"Tester Hotel Overview\");",
+              "err": {
+                "message": "TypeError: cy.percySnapshot is not a function",
+                "estack": "TypeError: cy.percySnapshot is not a function\n    at Context.eval (http://localhost:3000/__cypress/tests?p=cypress/integration/assignment-2.spec.js:295:8)",
+                "diff": null
+              },
+              "uuid": "c7e1cc7d-68c6-4b99-8621-98eebb7cf619",
+              "parentUUID": "bd941675-a19a-48fa-ae16-15e9d4c3bc92",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "43eb97c9-9d22-4649-ba55-d9e22c35383d",
+            "bdc16856-7a55-45fc-a036-c530ab9a49be",
+            "1fe8859f-51b7-4d4a-8478-4895ce367ed4",
+            "a919e2b5-2508-4693-9588-7bc839c10a61",
+            "c7e1cc7d-68c6-4b99-8621-98eebb7cf619"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 28641,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": "false",
+        "html": "false",
+        "json": "true"
+      },
+      "version": "5.2.0"
+    }
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2021-04-27T22:18:19.056Z",
+    "end": "2021-04-28T05:47:16.646Z",
+    "duration": 26937590,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "e93a8897-af62-409f-9c10-3ea1bf0bbf2d",
+      "title": "",
+      "fullFile": "cypress/integration/aleksCases/goToEditRoom.js",
+      "file": "cypress/integration/aleksCases/goToEditRoom.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "2673799a-9b96-4a8a-867b-ce3f1464c0ef",
+          "title": "Go to Rooms Edit",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Room Edit Save",
+              "fullTitle": "Go to Rooms Edit Room Edit Save",
+              "timedOut": null,
+              "duration": 26937240,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "homeStartPage.viewRooms(\"Rooms\");\nroomsPage.roomEditPage(\"Room\");\nroomEditPage.fillInEdit('twin', \"7\", \"13\", \"4886\", 'balcony');\nroomEditPage.editSave(\"Rooms\");\nroomsPage.verifyLastRoom('twin', \"7\", \"13\", \"4886\", \"true\", 'balcony');\nroomsPage.roomsBackBtn(\"Tester Hotel Overview\");",
+              "err": {
+                "message": "TypeError: roomsPage.roomEditPage is not a function",
+                "estack": "TypeError: roomsPage.roomEditPage is not a function\n    at Context.eval (http://localhost:3000/__cypress/tests?p=cypress/integration/aleksCases/goToEditRoom.js:217:15)",
+                "diff": null
+              },
+              "uuid": "4c87871e-1e8a-4e62-a79c-007ead8ea4f4",
+              "parentUUID": "2673799a-9b96-4a8a-867b-ce3f1464c0ef",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "4c87871e-1e8a-4e62-a79c-007ead8ea4f4"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 26937240,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": "false",
+        "html": "false",
+        "json": "true"
+      },
+      "version": "5.2.0"
+    }
+  }
+}

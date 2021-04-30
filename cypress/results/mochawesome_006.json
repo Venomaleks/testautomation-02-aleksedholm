@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-04-29T08:03:04.830Z",
+    "end": "2021-04-29T08:03:09.454Z",
+    "duration": 4624,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "9885c229-e6d9-44f3-98fc-a43ee00acb77",
+      "title": "",
+      "fullFile": "cypress/integration/aleksCases/login-spec.js",
+      "file": "cypress/integration/aleksCases/login-spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "ed3fe9e4-af98-4c5c-858b-438aac18271b",
+          "title": "Login user / Logout user",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login, Logout",
+              "fullTitle": "Login user / Logout user Login, Logout",
+              "timedOut": null,
+              "duration": 4534,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "loginPage.checkLoginPageTitle(\"Login\");\nloginPage.performValideLogin(\"tester01\", \"GteteqbQQgSr88SwNExUQv2ydb7xuf8c\", \"Tester Hotel Overview\");\nhomeStartPage.logoutUser(\"Login\");",
+              "err": {},
+              "uuid": "e6683c5c-ca34-4956-925a-a1ba41a875ac",
+              "parentUUID": "ed3fe9e4-af98-4c5c-858b-438aac18271b",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "e6683c5c-ca34-4956-925a-a1ba41a875ac"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 4534,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": "false",
+        "html": "false",
+        "json": "true"
+      },
+      "version": "5.2.0"
+    }
+  }
+}

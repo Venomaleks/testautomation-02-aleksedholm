@@ -1,0 +1,167 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 3,
+    "pending": 0,
+    "failures": 1,
+    "start": "2021-04-29T13:38:00.747Z",
+    "end": "2021-04-29T13:38:39.685Z",
+    "duration": 38938,
+    "testsRegistered": 4,
+    "passPercent": 75,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "4da4539a-465e-436a-8b5e-eef0a35848d3",
+      "title": "",
+      "fullFile": "cypress/integration/aleksCases/homeButton.js",
+      "file": "cypress/integration/aleksCases/homeButton.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "7ea76244-2410-45ac-9467-cea21539e941",
+          "title": "Home Button in the pages",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Go to Rooms",
+              "fullTitle": "Home Button in the pages Go to Rooms",
+              "timedOut": null,
+              "duration": 9058,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "homeStartPage.viewRooms(\"Rooms\");\nroomPage.goHomePageRoom(\"Tester Hotel Overview\");\nhomeStartPage.viewRooms(\"Rooms\");\ncy.wait(500);\nroomPage.roomCreatBtn(\"New Room\");\ncreatRoom.goHomePageRoom(\"Tester Hotel Overview\");\nhomeStartPage.viewRooms(\"Rooms\");\ncy.wait(500);\nroomPage.roomsMenuEdt(\"Room\");\neditRoom.goHomePageRoom(\"Tester Hotel Overview\");",
+              "err": {},
+              "uuid": "ed286076-64c6-43fd-b1de-46776413a28b",
+              "parentUUID": "7ea76244-2410-45ac-9467-cea21539e941",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Go to Clients",
+              "fullTitle": "Home Button in the pages Go to Clients",
+              "timedOut": null,
+              "duration": 7780,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "homeStartPage.viewClients(\"Clients\");\nclientPage.goHomePageClient(\"Tester Hotel Overview\");\nhomeStartPage.viewClients(\"Clients\");\ncy.wait(500);\nclientPage.clientCreatBtn(\"New Client\");\ncreatClient.goHomePageClient(\"Tester Hotel Overview\");\nhomeStartPage.viewClients(\"Clients\");\ncy.wait(500);\nclientPage.clientsMenuEdt(\"Client\");\neditClient.goHomePageClient(\"Tester Hotel Overview\");",
+              "err": {},
+              "uuid": "e7b6f626-473b-4d76-8311-ecdd36ecd61a",
+              "parentUUID": "7ea76244-2410-45ac-9467-cea21539e941",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Go to Bills",
+              "fullTitle": "Home Button in the pages Go to Bills",
+              "timedOut": null,
+              "duration": 7793,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "homeStartPage.viewBills(\"Bills\");\nbillPage.goHomePageBill(\"Tester Hotel Overview\");\nhomeStartPage.viewBills(\"Bills\");\ncy.wait(500);\nbillPage.billCreatBtn(\"New Bill\");\ncreatBill.goHomePageBill(\"Tester Hotel Overview\");\nhomeStartPage.viewBills(\"Bills\");\ncy.wait(500);\nbillPage.billsMenuEdt(\"Bill\");\neditBill.goHomePageBill(\"Tester Hotel Overview\");",
+              "err": {},
+              "uuid": "dcbd1afd-e03e-440f-97c6-f7f010a72c02",
+              "parentUUID": "7ea76244-2410-45ac-9467-cea21539e941",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Go to Resurvations",
+              "fullTitle": "Home Button in the pages Go to Resurvations",
+              "timedOut": null,
+              "duration": 11903,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "homeStartPage.viewResurvations(\"Reservations\");\nreservPage.goHomePageReserv(\"Tester Hotel Overview\");\nhomeStartPage.viewResurvations(\"Reservations\");\ncy.wait(500);\nreservPage.reservCreatBtn(\"New Reservation\");\ncreatReserv.goHomePageReserv(\"Tester Hotel Overview\");\nhomeStartPage.viewResurvations(\"Reservations\");\ncy.wait(500);\nreservPage.reservsMenuEdt(\"Reservation\");\neditReserv.goHomePageReserv(\"Tester Hotel Overview\");",
+              "err": {
+                "message": "CypressError: Timed out retrying after 4050ms: `cy.click()` failed because this element is detached from the DOM.\n\n`<a data-v-3de5c26b=\"\" href=\"/reservations\" class=\"btn\">View</a>`\n\nCypress requires elements be attached in the DOM to interact with them.\n\nThe previous command that ran was:\n\n  > `cy.get()`\n\nThis DOM element likely became detached somewhere between the previous and current command.\n\nCommon situations why this happens:\n  - Your JS framework re-rendered asynchronously\n  - Your app code reacted to an event firing and removed the element\n\nYou typically need to re-query for the element or add 'guards' which delay Cypress from running new commands.\n\nhttps://on.cypress.io/element-has-detached-from-dom",
+                "estack": "CypressError: Timed out retrying after 4050ms: `cy.click()` failed because this element is detached from the DOM.\n\n`<a data-v-3de5c26b=\"\" href=\"/reservations\" class=\"btn\">View</a>`\n\nCypress requires elements be attached in the DOM to interact with them.\n\nThe previous command that ran was:\n\n  > `cy.get()`\n\nThis DOM element likely became detached somewhere between the previous and current command.\n\nCommon situations why this happens:\n  - Your JS framework re-rendered asynchronously\n  - Your app code reacted to an event firing and removed the element\n\nYou typically need to re-query for the element or add 'guards' which delay Cypress from running new commands.\n\nhttps://on.cypress.io/element-has-detached-from-dom\n    at $Cy.ensureAttached (http://localhost:3000/__cypress/runner/cypress_runner.js:141687:24)\n    at runAllChecks (http://localhost:3000/__cypress/runner/cypress_runner.js:130414:12)\n    at retryActionability (http://localhost:3000/__cypress/runner/cypress_runner.js:130491:16)\n    at tryCatcher (http://localhost:3000/__cypress/runner/cypress_runner.js:10747:23)\n    at Function.Promise.attempt.Promise.try (http://localhost:3000/__cypress/runner/cypress_runner.js:8021:29)\n    at tryFn (http://localhost:3000/__cypress/runner/cypress_runner.js:146270:21)\n    at whenStable (http://localhost:3000/__cypress/runner/cypress_runner.js:146308:12)\n    at http://localhost:3000/__cypress/runner/cypress_runner.js:145803:16\n    at tryCatcher (http://localhost:3000/__cypress/runner/cypress_runner.js:10747:23)\n    at Promise._settlePromiseFromHandler (http://localhost:3000/__cypress/runner/cypress_runner.js:8682:31)\n    at Promise._settlePromise (http://localhost:3000/__cypress/runner/cypress_runner.js:8739:18)\n    at Promise._settlePromise0 (http://localhost:3000/__cypress/runner/cypress_runner.js:8784:10)\n    at Promise._settlePromises (http://localhost:3000/__cypress/runner/cypress_runner.js:8864:18)\n    at Promise._fulfill (http://localhost:3000/__cypress/runner/cypress_runner.js:8808:18)\n    at http://localhost:3000/__cypress/runner/cypress_runner.js:10422:46\nFrom Your Spec Code:\n    at Object.viewResurvations (http://localhost:3000/__cypress/tests?p=cypress/integration/aleksCases/homeButton.js:743:33)\n    at Context.eval (http://localhost:3000/__cypress/tests?p=cypress/integration/aleksCases/homeButton.js:277:19)",
+                "diff": null
+              },
+              "uuid": "0ddd4f6c-5bed-4f82-9add-4efd8f3b61ce",
+              "parentUUID": "7ea76244-2410-45ac-9467-cea21539e941",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "ed286076-64c6-43fd-b1de-46776413a28b",
+            "e7b6f626-473b-4d76-8311-ecdd36ecd61a",
+            "dcbd1afd-e03e-440f-97c6-f7f010a72c02"
+          ],
+          "failures": [
+            "0ddd4f6c-5bed-4f82-9add-4efd8f3b61ce"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 36534,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": "false",
+        "html": "false",
+        "json": "true"
+      },
+      "version": "5.2.0"
+    }
+  }
+}

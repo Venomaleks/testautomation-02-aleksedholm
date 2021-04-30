@@ -1,0 +1,181 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 5,
+    "passes": 5,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-04-30T09:36:51.298Z",
+    "end": "2021-04-30T09:37:48.454Z",
+    "duration": 57156,
+    "testsRegistered": 5,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "0bbbf39f-67dd-47fa-a7bb-3a785cefa2eb",
+      "title": "",
+      "fullFile": "cypress/integration/assignment-2.spec.js",
+      "file": "cypress/integration/assignment-2.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "213e5b26-d260-41ae-92f2-83f76c2826a4",
+          "title": "Home Button in the pages and creat a room",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Go to Rooms",
+              "fullTitle": "Home Button in the pages and creat a room Go to Rooms",
+              "timedOut": null,
+              "duration": 14979,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.wait(500);\nhomeStartPage.viewRooms(\"Rooms\");\ncy.wait(500);\ncy.log(\"rooms\");\ncy.wait(500);\ncy.percySnapshot('Rooms-page');\ncy.wait(500);\nroomPage.roomCreatBtn(\"New Room\");\ncy.percySnapshot('Newroom-page');\ncreatRoom.goHomePageRoom(\"Tester Hotel Overview\");\ncy.percySnapshot('Home-page');\nhomeStartPage.viewRooms(\"Rooms\");\ncy.wait(500);\nroomPage.roomsMenuEdt(\"Room\");\ncy.percySnapshot('Editroom-page');\neditRoom.goHomePageRoom(\"Tester Hotel Overview\");",
+              "err": {},
+              "uuid": "905cbf20-d39a-4b4b-afb3-e1373e6d3e07",
+              "parentUUID": "213e5b26-d260-41ae-92f2-83f76c2826a4",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Room Creat",
+              "fullTitle": "Home Button in the pages and creat a room Room Creat",
+              "timedOut": null,
+              "duration": 11695,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "homeStartPage.viewRooms(\"Rooms\");\ncy.wait(500);\nroomPage.roomCreatBtn(\"New Room\");\ncy.percySnapshot('Newroom-page-beforeNewroom');\ncreatRoom.fillInFormRoom(randomCategory, randomNumber, randomFloor, randomPrice, [randomFeatcher]);\ncy.percySnapshot('NewroomInputs-page');\ncreatRoom.roomSave(\"Rooms\");\nroomPage.verifyLastRoom(randomCategory, randomNumber, randomFloor, randomPrice, [randomFeatcher]);\ncy.percySnapshot('NewroomInList-page-afterNewroom');\ncreatRoom.goHomePageRoom(\"Tester Hotel Overview\");",
+              "err": {},
+              "uuid": "0ccf0523-c45d-48b4-a58b-9714c888e43c",
+              "parentUUID": "213e5b26-d260-41ae-92f2-83f76c2826a4",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Go to Clients",
+              "fullTitle": "Home Button in the pages and creat a room Go to Clients",
+              "timedOut": null,
+              "duration": 8426,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "homeStartPage.viewClients(\"Clients\");\ncy.wait(500);\nclientPage.clientCreatBtn(\"New Client\");\ncy.percySnapshot('Newclient-page');\ncreatClient.goHomePageClient(\"Tester Hotel Overview\");\nhomeStartPage.viewClients(\"Clients\");\ncy.wait(500);\nclientPage.clientsMenuEdt(\"Client\");\ncy.percySnapshot('Editclient-page');\neditClient.goHomePageClient(\"Tester Hotel Overview\");",
+              "err": {},
+              "uuid": "38aa2442-3756-48b0-b7de-55644b193b6e",
+              "parentUUID": "213e5b26-d260-41ae-92f2-83f76c2826a4",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Go to Bills",
+              "fullTitle": "Home Button in the pages and creat a room Go to Bills",
+              "timedOut": null,
+              "duration": 8011,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "homeStartPage.viewBills(\"Bills\");\ncy.wait(500);\nbillPage.billCreatBtn(\"New Bill\");\ncy.percySnapshot('Creatbill-page');\ncreatBill.goHomePageBill(\"Tester Hotel Overview\");\nhomeStartPage.viewBills(\"Bills\");\ncy.wait(500);\nbillPage.billsMenuEdt(\"Bill\");\ncy.percySnapshot('Editbill-page');\neditBill.goHomePageBill(\"Tester Hotel Overview\");",
+              "err": {},
+              "uuid": "e90cb60e-c50f-4396-a229-22098488fc9e",
+              "parentUUID": "213e5b26-d260-41ae-92f2-83f76c2826a4",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Go to Resurvations",
+              "fullTitle": "Home Button in the pages and creat a room Go to Resurvations",
+              "timedOut": null,
+              "duration": 11006,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "homeStartPage.viewResurvations(\"Reservations\");\ncy.wait(500);\nreservPage.reservCreatBtn(\"New Reservation\");\ncy.percySnapshot('New-page');\ncy.wait(1000);\ncreatReserv.goHomePageReserv(\"Tester Hotel Overview\");\ncy.percySnapshot('Homereserv-page');\ncy.wait(1000); //homeStartPage.errorBTN(\"Tester Hotel Overview\")\nhomeStartPage.viewResurvations(\"Reservations\");\ncy.wait(500);\nreservPage.reservsMenuEdt(\"Reservation\");\ncy.percySnapshot('Editreserv-page');\neditReserv.goHomePageReserv(\"Tester Hotel Overview\");",
+              "err": {},
+              "uuid": "662723fc-970b-46c0-be5c-46752e2ffe47",
+              "parentUUID": "213e5b26-d260-41ae-92f2-83f76c2826a4",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "905cbf20-d39a-4b4b-afb3-e1373e6d3e07",
+            "0ccf0523-c45d-48b4-a58b-9714c888e43c",
+            "38aa2442-3756-48b0-b7de-55644b193b6e",
+            "e90cb60e-c50f-4396-a229-22098488fc9e",
+            "662723fc-970b-46c0-be5c-46752e2ffe47"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 54117,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": "false",
+        "html": "false",
+        "json": "true"
+      },
+      "version": "5.2.0"
+    }
+  }
+}
